@@ -35,7 +35,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Korataki", sans-serif;
-  background-color: var(--black);
   color: var(--white);
 }
 
@@ -54,6 +53,7 @@ html {
 
 body {
   overflow-x: hidden;
+  background-color: var(--black);
 }
 /* Navigation Bar */
 #nav {
@@ -275,14 +275,14 @@ body {
       background-repeat: no-repeat;
     }
 
-    .phone-black {
+  .phone-black {
       background-image: url("../assets/hero-phone-black.png");
-      right: 27vw; 
-      bottom: 8vh;
+      right: -30vw; 
+      bottom: -8vh; 
     }
 
     .phone-white {
-      background-image: url("../assets/hero-phone-white.png");
-      right: 21vw; 
-      bottom: 3vh; 
+      background-image: url("../assets/phone-White.svg");
+      right: -25vw;
+      bottom: -3vh;
     }
