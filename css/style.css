@@ -51,6 +51,9 @@ body,html{
     width: 100%;
 }
 
+body{
+    overflow-x: hidden;
+}
 /* Navigation Bar */
 #nav{
     width: 100%;
@@ -259,4 +262,21 @@ body,html{
 .hero-line13 {
     bottom: 14.5vh;
     left: 53.7vw;
+}
+
+.phone-black{
+    height: 28vw;
+    position: absolute;
+    transform: rotate(325deg);
+    right: -27vw;
+    bottom: -8vh;
+}
+
+
+.phone-white{
+    height: 28vw;
+    position: absolute;
+    transform: rotate(325deg);
+    right: -21vw;
+    bottom: -2vh;
 }

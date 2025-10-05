@@ -29,4 +29,18 @@ function lineanime() {
     .to(".hero-line13", { width: "46vw" }, "<0.25");
 }
 
+
 lineanime();
+
+function phoneanime(){
+    gsap.to(".phone-black",{
+        right: "27vw",
+        bottom: "8vh",
+    })
+     gsap.to(".phone-white",{
+        right: "21vw",
+        delay:5,
+    })
+}
+
+phoneanime();
