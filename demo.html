@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth GSAP Phone Animation</title>
+  <style>
+    body {
+      background: #111;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero-phone {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .phone-black,
+    .phone-white {
+      position: absolute;
+      width: 15vw;
+      height: 28vw;
+      transform: rotate(325deg);
+      will-change: transform, opacity;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .phone-black {
+      background-image: url("assets/hero-phone-black.png");
+      right: 27vw; /* final position */
+      bottom: 8vh; /* final position */
+    }
+
+    .phone-white {
+      background-image: url("assets/phone-White.svg");
+      right: 21vw; /* final position */
+      bottom: 3vh; /* final position */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero-phone">
+    <div class="phone-black"></div>
+    <div class="phone-white"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script>
+    function phoneanime() {
+      // Black phone slides from bottom-right
+      gsap.from(".phone-black", {
+        x: 100,        // starts offset to right
+        y: 50,         // starts offset below
+        opacity: 0,    // fade-in
+        duration: 1,
+        ease: "power2.out"
+      });
+
+      // White phone slides from bottom-right, delayed
+      gsap.from(".phone-white", {
+        x: 120,        // starts offset to right
+        y: 80,         // starts offset below
+        opacity: 0,
+        duration: 1,
+        delay: 1,
+        ease: "power2.out"
+      });
+    }
+
+    window.addEventListener("load", phoneanime);
+  </script>
+</body>
+</html>

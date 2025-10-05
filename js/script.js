@@ -30,17 +30,27 @@ function lineanime() {
 }
 
 
-lineanime();
 
-function phoneanime(){
-    gsap.to(".phone-black",{
-        right: "27vw",
-        bottom: "8vh",
-    })
-     gsap.to(".phone-white",{
-        right: "21vw",
-        delay:5,
-    })
-}
 
-phoneanime();
+  function phoneanime() {
+      // Black phone slides from bottom-right
+      gsap.from(".phone-black", {
+        x: 100,        // starts offset to right
+        y: 50,         // starts offset below
+        opacity: 0,    // fade-in
+        duration: 1,
+        ease: "power2.out"
+      });
+
+      // White phone slides from bottom-right, delayed
+      gsap.from(".phone-white", {
+        x: 120,        // starts offset to right
+        y: 80,         // starts offset below
+        opacity: 0,
+        duration: 1,
+        delay: 1,
+        ease: "power2.out"
+      });
+    }
+
+    window.addEventListener("load", phoneanime);

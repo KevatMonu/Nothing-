@@ -1,174 +1,173 @@
 @font-face {
-    font-family: 'Ndot';
-    src: url(../font/Ndot-55-DoenNkNm.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Ndot";
+  src: url(../font/Ndot-55-DoenNkNm.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Korataki-Rg';
-    src: url(../font/korataki-rg-3cf0d889-B6eTgmP5.woff2)format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Korataki-Rg";
+  src: url(../font/korataki-rg-3cf0d889-B6eTgmP5.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Korataki ';
-    src: url(../font/korataki-rg-3cf0d889.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Korataki ";
+  src: url(../font/korataki-rg-3cf0d889.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Sansation';
-    src: url(../font/Sansation_Regular-COtNG1MQ.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Sansation";
+  src: url(../font/Sansation_Regular-COtNG1MQ.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Korataki', sans-serif;
-    background-color: var(--black);
-    color: var(--white);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Korataki", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
 }
 
-:root{
-    --black:#000000;
-    --white:#fff;
-    --grey:#999D9C;
-    --light-grey:#647a9f;
+:root {
+  --black: #000000;
+  --white: #fff;
+  --grey: #999d9c;
+  --light-grey: #647a9f;
 }
 
-body,html{
-    height: 100%;
-    width: 100%;
+body,
+html {
+  height: 100%;
+  width: 100%;
 }
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 /* Navigation Bar */
-#nav{
-    width: 100%;
-    height: 16vh;
-    display: flex;
-    align-items: center;
-    padding: 1.9vw   1vw 0 1.5vw;
-    justify-content: space-between;
+#nav {
+  width: 100%;
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  padding: 1.9vw 1vw 0 1.5vw;
+  justify-content: space-between;
 }
 
-.nav1>img{
-    height: 6.5vw;
+.nav1 > img {
+  height: 6.5vw;
 }
-.nav1{
-    position: relative;
-}
-
-.nav1>h1{
-    font-family: 'Ndot', sans-serif;
-    font-size: 3.5vw;
-    margin-right: 2vw;
-    font-weight: 100;
-    text-transform: uppercase;
-    position: absolute;
-    background: transparent;
-    top: 1.3vw;
-    left: 3vw;
+.nav1 {
+  position: relative;
 }
 
-.nav2{
-    position: relative;
-}
-.nav2>#search{
-    position: absolute;
-    width: 15vw;
-    top: 1vw;
-    left: 2vw;
-    background: transparent;
-    border: none;
-    font-size: 1.4vw;
-    padding: .3vw;
-    outline: none;
-    
+.nav1 > h1 {
+  font-family: "Ndot", sans-serif;
+  font-size: 3.5vw;
+  margin-right: 2vw;
+  font-weight: 100;
+  text-transform: uppercase;
+  position: absolute;
+  background: transparent;
+  top: 1.3vw;
+  left: 3vw;
 }
 
-#search::placeholder{
-    color: var(--light-grey);
+.nav2 {
+  position: relative;
 }
-.nav2>img{
-    width: 21vw;
-   height: 9vh;
+.nav2 > #search {
+  position: absolute;
+  width: 15vw;
+  top: 1vw;
+  left: 2vw;
+  background: transparent;
+  border: none;
+  font-size: 1.4vw;
+  padding: 0.3vw;
+  outline: none;
 }
 
-.nav3{
-    display: flex;
-    align-items: center;
-    gap: 2vw;
+#search::placeholder {
+  color: var(--light-grey);
 }
-.nav3-img{
-    position: relative;
+.nav2 > img {
+  width: 21vw;
+  height: 9vh;
 }
-.nav3-img>a{
-    font-family: 'Korataki-Rg',sans-serif;
-    position: absolute;
-    top:1.4vw;
-    left: 1.5vw;
-    text-decoration: none;
-    font-size: 1vw;
-    text-align: center;
+
+.nav3 {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
 }
-.nav3-img>.nav-a{
-    
-    left: 3vw;
+.nav3-img {
+  position: relative;
 }
-.nav3-img>.nav-b{
-    left: 3vw;
+.nav3-img > a {
+  font-family: "Korataki-Rg", sans-serif;
+  position: absolute;
+  top: 1.4vw;
+  left: 1.5vw;
+  text-decoration: none;
+  font-size: 1vw;
+  text-align: center;
 }
-.nav3-img>img {
-    width: 11vw;
-    height: 10vh;
+.nav3-img > .nav-a {
+  left: 3vw;
+}
+.nav3-img > .nav-b {
+  left: 3vw;
+}
+.nav3-img > img {
+  width: 11vw;
+  height: 10vh;
 }
 
 /*Hero  Section */
 
-#hero{
-    width: 100%;
-    height: 84vh;
-    position: relative;
+#hero {
+  width: 100%;
+  height: 84vh;
+  position: relative;
 }
 
-.hero-con{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 10vh;
-    left: 3vw;
-    gap: 4vw;
+.hero-con {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10vh;
+  left: 3vw;
+  gap: 4vw;
 }
-.hero-title h1{
-    font-family: 'Korataki-Rg',sans-serif;
-    font-size:2.8vw;
-    font-weight: 100;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.5;
-    color: var(--grey);
+.hero-title h1 {
+  font-family: "Korataki-Rg", sans-serif;
+  font-size: 2.8vw;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--grey);
 }
 
-.hero-info{
-    font-family: 'Ndot',sans-serif;
-    font-size: 1.5vw;
-    font-weight: 100;
-    color: var(--grey);
-    word-spacing: .2vw;
-    padding-left: 2vw;
+.hero-info {
+  font-family: "Ndot", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 100;
+  color: var(--grey);
+  word-spacing: 0.2vw;
+  padding-left: 2vw;
 }
 
 /* Base styles for all hero lines */
@@ -185,98 +184,105 @@ body{
 .hero-line11,
 .hero-line12,
 .hero-line13 {
-    position: absolute;
-    width: 0; 
-    height: 0; 
-    will-change: width; 
-    transform: translateZ(0); 
-    backface-visibility: hidden; 
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .hero-line1 {
-    top: 5.2vh;
-    left: 17.9vw;
-    transform: rotate(35deg) translateZ(0);
+  top: 5.2vh;
+  left: 17.9vw;
+  transform: rotate(35deg) translateZ(0);
 }
 
 .hero-line2 {
-    top: 11vh;
-    left: 26.1vw;
+  top: 11vh;
+  left: 26.1vw;
 }
 
 .hero-line3 {
-    top: 16.1vh;
-    left: 40.3vw;
-    transform: rotate(35deg) translateZ(0);
+  top: 16.1vh;
+  left: 40.3vw;
+  transform: rotate(35deg) translateZ(0);
 }
 
 .hero-line4 {
-    top: 21.2vh;
-    left: 47.5vw;
+  top: 21.2vh;
+  left: 47.5vw;
 }
 
 .hero-line5 {
-    top: 20.5vh;
-    left: 35vw;
-    transform: rotate(35deg) translateZ(0);
+  top: 20.5vh;
+  left: 35vw;
+  transform: rotate(35deg) translateZ(0);
 }
 
 .hero-line6 {
-    top: 30vh;
-    left: 48.6vw;
+  top: 30vh;
+  left: 48.6vw;
 }
 
 .hero-line7 {
-    top: 33.1vh;
-    left: 53vw;
-    transform: rotate(35deg) translateZ(0);
+  top: 33.1vh;
+  left: 53vw;
+  transform: rotate(35deg) translateZ(0);
 }
 
 .hero-line8 {
-    top: 36.2vh;
-    left: 57.6vw;
+  top: 36.2vh;
+  left: 57.6vw;
 }
 
 .hero-line9 {
-    top: 33.1vh;
-    left: 72.1vw;
-    transform: rotate(145deg) translateZ(0);
+  top: 33.1vh;
+  left: 72.1vw;
+  transform: rotate(145deg) translateZ(0);
 }
 
 .hero-line10 {
-    top: 30vh;
-    left: 76.6vw;
+  top: 30vh;
+  left: 76.6vw;
 }
 
 .hero-line11 {
-    bottom: 7vh;
-    left: 0; 
+  bottom: 7vh;
+  left: 0;
 }
 
 .hero-line12 {
-    bottom: 10.7vh;
-    left: 49.4vw;
-    transform: rotate(138deg) translateZ(0);
+  bottom: 10.7vh;
+  left: 49.4vw;
+  transform: rotate(138deg) translateZ(0);
 }
 
 .hero-line13 {
-    bottom: 14.5vh;
-    left: 53.7vw;
+  bottom: 14.5vh;
+  left: 53.7vw;
 }
 
-.phone-black{
-    height: 28vw;
-    position: absolute;
-    transform: rotate(325deg);
-    right: -27vw;
-    bottom: -8vh;
-}
+.phone-black,
+    .phone-white {
+      position: absolute;
+      width: 15vw;
+      height: 28vw;
+      transform: rotate(325deg);
+      will-change: transform, opacity;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
 
+    .phone-black {
+      background-image: url("../assets/hero-phone-black.png");
+      right: 27vw; 
+      bottom: 8vh;
+    }
 
-.phone-white{
-    height: 28vw;
-    position: absolute;
-    transform: rotate(325deg);
-    right: -21vw;
-    bottom: -2vh;
-}
+    .phone-white {
+      background-image: url("../assets/hero-phone-white.png");
+      right: 21vw; 
+      bottom: 3vh; 
+    }
