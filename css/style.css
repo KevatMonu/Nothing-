@@ -58,10 +58,10 @@ body {
 /* Navigation Bar */
 #nav {
   width: 100%;
-  height: 16vh;
   display: flex;
   align-items: center;
   padding: 1.9vw 1vw 0 1.5vw;
+
   justify-content: space-between;
 }
 
@@ -169,6 +169,9 @@ body {
   word-spacing: 0.2vw;
   padding-left: 2vw;
 }
+.hero-info>br{
+  display: none;
+}
 
 /* Base styles for all hero lines */
 .hero-line1,
@@ -266,7 +269,7 @@ body {
 .phone-black,
     .phone-white {
       position: absolute;
-      width: 15vw;
+      width: 25vw;
       height: 28vw;
       transform: rotate(325deg);
       will-change: transform, opacity;
@@ -285,4 +288,23 @@ body {
       background-image: url("../assets/phone-White.svg");
       right: -25vw;
       bottom: -3vh;
+    }
+
+
+    /*Feature Section */
+
+    #feature{
+      width: 100%;
+      height: 90vh;
+    }
+
+    .head-feature{
+      font-family: 'Korataki-Rg';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: capitalize;
+      font-size: 5vw;
+      text-shadow:0px 0px 7px #fff ;
+      padding-top: 2vw;
     }
