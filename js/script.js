@@ -89,3 +89,9 @@ window.addEventListener("resize", () => {
   resizeTimeout = setTimeout(phoneAnimation, 300);
 });
 */
+
+
+function featureanime(){
+
+}
+featureanime();
