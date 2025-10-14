@@ -18,36 +18,42 @@
     display: none;
   }
   .hero-con {
-    position: static;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    padding: 15vw 0 2vw 0;
+   position: static;
+   width: 100%;
+   height: 100%;
+   justify-content: space-between;
+   padding: 15vw 0 2vw 0;
   }
-  .hero-title h1 {
+  .hero-title h1{
     font-size: 5vw;
   }
+
   .phone-black, .phone-white {
     position: absolute;
     width: 34vw;
-    height: 79vw;
-  }
-  .phone-black {
+    height: 79vw;}
+
+
+.phone-black{
+     right: -50vw;
+     bottom: -20vh;
+}
+
+.phone-white{
     right: -50vw;
-    bottom: -20vh;
-  }
-  .phone-white {
-    right: -50vw;
-    bottom: -20vh;
-  }
-  .hero-info {
+     bottom: -20vh;
+}
+
+.hero-info{
     font-size: 7vw;
     text-align: center;
-  }
-  .hero-info > br {
+}
+
+.hero-info>br{
     display: block;
-  }
-  .hero-info > span {
+}
+.hero-info>span{
     display: none;
-  }
-}/*# sourceMappingURL=responisive.css.map */
+}
+
+}

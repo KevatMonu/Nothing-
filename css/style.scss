@@ -5,6 +5,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Korataki-Rg";
   src: url(../font/korataki-rg-3cf0d889-B6eTgmP5.woff2) format("woff2");
@@ -12,6 +13,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Korataki ";
   src: url(../font/korataki-rg-3cf0d889.woff2) format("woff2");
@@ -19,6 +21,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Sansation";
   src: url(../font/Sansation_Regular-COtNG1MQ.woff2) format("woff2");
@@ -26,6 +29,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -51,20 +55,19 @@ body {
   overflow-x: hidden;
   background-color: var(--black);
 }
-
 /* Navigation Bar */
 #nav {
   width: 100%;
   display: flex;
   align-items: center;
   padding: 1.9vw 1vw 0 1.5vw;
+
   justify-content: space-between;
 }
 
 .nav1 > img {
   height: 6.5vw;
 }
-
 .nav1 {
   position: relative;
 }
@@ -84,7 +87,6 @@ body {
 .nav2 {
   position: relative;
 }
-
 .nav2 > #search {
   position: absolute;
   width: 15vw;
@@ -97,14 +99,9 @@ body {
   outline: none;
 }
 
-#search::-moz-placeholder {
-  color: var(--light-grey);
-}
-
 #search::placeholder {
   color: var(--light-grey);
 }
-
 .nav2 > img {
   width: 21vw;
   height: 9vh;
@@ -115,11 +112,9 @@ body {
   align-items: center;
   gap: 2vw;
 }
-
 .nav3-img {
   position: relative;
 }
-
 .nav3-img > a {
   font-family: "Korataki-Rg", sans-serif;
   position: absolute;
@@ -129,21 +124,19 @@ body {
   font-size: 1vw;
   text-align: center;
 }
-
 .nav3-img > .nav-a {
   left: 3vw;
 }
-
 .nav3-img > .nav-b {
   left: 3vw;
 }
-
 .nav3-img > img {
   width: 11vw;
   height: 10vh;
 }
 
 /*Hero  Section */
+
 #hero {
   width: 100%;
   height: 84vh;
@@ -158,7 +151,6 @@ body {
   left: 3vw;
   gap: 4vw;
 }
-
 .hero-title h1 {
   font-family: "Korataki-Rg", sans-serif;
   font-size: 2.8vw;
@@ -177,7 +169,6 @@ body {
   word-spacing: 0.2vw;
   padding-left: 2vw;
 }
-
 .hero-info > br {
   display: none;
 }
@@ -352,7 +343,7 @@ body {
   left: 15vw;
   width: 18vw;
   height: 20vh;
-  padding-left: 0.3vw;
+  padding-left: .3vw;
 }
 
 .lt1 {
@@ -402,9 +393,9 @@ body {
 .left-mid-text {
   top: 45vh;
   left: 10vw;
-  width: 18vw;
+   width: 18vw;
   height: 20vh;
-  padding-left: 0.9vw;
+   padding-left: .9vw;
 }
 
 .lm1 {
@@ -452,11 +443,11 @@ body {
 
 /* ===== Mid Left Top ===== */
 .mid-left-top-text {
-  top: 31vh;
-  left: 33vw;
-  width: 18vw;
+    top: 31vh;
+  left:33vw;
+   width: 18vw;
   height: 20vh;
-  padding-left: 0.4vw;
+   padding-left: .4vw;
 }
 
 .mlt1 {
@@ -504,7 +495,7 @@ body {
 
 /* ===== Mid Left Bottom ===== */
 .mid-left-bottom-text {
-  bottom: 13vh;
+   bottom: 13vh;
   left: 30vw;
   width: 18vw;
   height: 20vh;
@@ -559,7 +550,7 @@ body {
   right: 29vw;
   width: 18vw;
   height: 20vh;
-  padding-left: 0.4vw;
+   padding-left: .4vw;
 }
 
 .mrt1 {
@@ -608,10 +599,10 @@ body {
 /* ===== Mid Right Bottom ===== */
 .mid-right-bottom-text {
   right: 28vw;
-  bottom: 13vh;
-  width: 18vw;
+    bottom: 13vh;
+   width: 18vw;
   height: 20vh;
-  line-height: 1;
+  line-height:1;
 }
 
 .mrb1 {
@@ -659,7 +650,7 @@ body {
 
 /* ===== Right Mid ===== */
 .right-mid-set-text {
-  top: 45vh;
+top: 45vh;
   right: 9vw;
   width: 15vw;
   height: 18vh;
@@ -710,9 +701,9 @@ body {
 
 /* ===== Right Top ===== */
 .right-top-text {
-  top: 9vh;
+    top: 9vh;
   right: 14vw;
-  width: 15vw;
+ width: 15vw;
   height: 18vh;
 }
 
@@ -757,4 +748,4 @@ body {
   top: 17.3vh;
   right: 7.5vw;
   transform: rotate(90deg);
-}/*# sourceMappingURL=style.css.map */
+}
