@@ -13,7 +13,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Korataki ";
+  font-family: "Korataki";
   src: url(../font/korataki-rg-3cf0d889.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -26,19 +26,18 @@
   font-style: normal;
   font-display: swap;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Korataki", sans-serif;
-  color: var(--white);
-}
-
 :root {
   --black: #000000;
   --white: #fff;
   --grey: #999d9c;
   --light-grey: #647a9f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--white);
 }
 
 body,
@@ -52,7 +51,9 @@ body {
   background-color: var(--black);
 }
 
-/* Navigation Bar */
+/* =========================
+   Navigation Bar
+========================= */
 #nav {
   width: 100%;
   display: flex;
@@ -60,16 +61,13 @@ body {
   padding: 1.9vw 1vw 0 1.5vw;
   justify-content: space-between;
 }
-
-.nav1 > img {
-  height: 6.5vw;
-}
-
-.nav1 {
+#nav .nav1 {
   position: relative;
 }
-
-.nav1 > h1 {
+#nav .nav1 img {
+  height: 6.5vw;
+}
+#nav .nav1 h1 {
   font-family: "Ndot", sans-serif;
   font-size: 3.5vw;
   margin-right: 2vw;
@@ -80,12 +78,10 @@ body {
   top: 1.3vw;
   left: 3vw;
 }
-
-.nav2 {
+#nav .nav2 {
   position: relative;
 }
-
-.nav2 > #search {
+#nav .nav2 #search {
   position: absolute;
   width: 15vw;
   top: 1vw;
@@ -96,31 +92,25 @@ body {
   padding: 0.3vw;
   outline: none;
 }
-
-#search::-moz-placeholder {
+#nav .nav2 #search::-moz-placeholder {
   color: var(--light-grey);
 }
-
-#search::placeholder {
+#nav .nav2 #search::placeholder {
   color: var(--light-grey);
 }
-
-.nav2 > img {
+#nav .nav2 img {
   width: 21vw;
   height: 9vh;
 }
-
-.nav3 {
+#nav .nav3 {
   display: flex;
   align-items: center;
   gap: 2vw;
 }
-
-.nav3-img {
+#nav .nav3 .nav3-img {
   position: relative;
 }
-
-.nav3-img > a {
+#nav .nav3 .nav3-img a {
   font-family: "Korataki-Rg", sans-serif;
   position: absolute;
   top: 1.4vw;
@@ -129,28 +119,26 @@ body {
   font-size: 1vw;
   text-align: center;
 }
-
-.nav3-img > .nav-a {
+#nav .nav3 .nav3-img .nav-a {
   left: 3vw;
 }
-
-.nav3-img > .nav-b {
+#nav .nav3 .nav3-img .nav-b {
   left: 3vw;
 }
-
-.nav3-img > img {
+#nav .nav3 .nav3-img img {
   width: 11vw;
   height: 10vh;
 }
 
-/*Hero  Section */
+/* =========================
+   Hero Section
+========================= */
 #hero {
   width: 100%;
   height: 84vh;
   position: relative;
 }
-
-.hero-con {
+#hero .hero-con {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -158,8 +146,7 @@ body {
   left: 3vw;
   gap: 4vw;
 }
-
-.hero-title h1 {
+#hero .hero-con .hero-title h1 {
   font-family: "Korataki-Rg", sans-serif;
   font-size: 2.8vw;
   font-weight: 100;
@@ -168,8 +155,7 @@ body {
   line-height: 1.5;
   color: var(--grey);
 }
-
-.hero-info {
+#hero .hero-con .hero-info {
   font-family: "Ndot", sans-serif;
   font-size: 1.5vw;
   font-weight: 100;
@@ -177,25 +163,10 @@ body {
   word-spacing: 0.2vw;
   padding-left: 2vw;
 }
-
-.hero-info > br {
+#hero .hero-con .hero-info br {
   display: none;
 }
-
-/* Base styles for all hero lines */
-.hero-line1,
-.hero-line2,
-.hero-line3,
-.hero-line4,
-.hero-line5,
-.hero-line6,
-.hero-line7,
-.hero-line8,
-.hero-line9,
-.hero-line10,
-.hero-line11,
-.hero-line12,
-.hero-line13 {
+#hero .hero-line1 {
   position: absolute;
   width: 0;
   height: 0;
@@ -203,80 +174,162 @@ body {
   transform: translateZ(0);
   backface-visibility: hidden;
 }
-
-.hero-line1 {
+#hero .hero-line2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+#hero .hero-line3 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+#hero .hero-line4 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+#hero .hero-line5 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+#hero .hero-line6 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+#hero .hero-line7 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+#hero .hero-line8 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+#hero .hero-line9 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+#hero .hero-line10 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+#hero .hero-line11 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+#hero .hero-line12 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+#hero .hero-line13 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  will-change: width;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+#hero .hero-line1 {
   top: 5.2vh;
   left: 17.9vw;
   transform: rotate(35deg) translateZ(0);
 }
-
-.hero-line2 {
+#hero .hero-line2 {
   top: 11vh;
   left: 26.1vw;
 }
-
-.hero-line3 {
+#hero .hero-line3 {
   top: 16.1vh;
   left: 40.3vw;
   transform: rotate(35deg) translateZ(0);
 }
-
-.hero-line4 {
+#hero .hero-line4 {
   top: 21.2vh;
   left: 47.5vw;
 }
-
-.hero-line5 {
+#hero .hero-line5 {
   top: 20.5vh;
   left: 35vw;
   transform: rotate(35deg) translateZ(0);
 }
-
-.hero-line6 {
+#hero .hero-line6 {
   top: 30vh;
   left: 48.6vw;
 }
-
-.hero-line7 {
+#hero .hero-line7 {
   top: 33.1vh;
   left: 53vw;
   transform: rotate(35deg) translateZ(0);
 }
-
-.hero-line8 {
+#hero .hero-line8 {
   top: 36.2vh;
   left: 57.6vw;
 }
-
-.hero-line9 {
+#hero .hero-line9 {
   top: 33.1vh;
   left: 72.1vw;
   transform: rotate(145deg) translateZ(0);
 }
-
-.hero-line10 {
+#hero .hero-line10 {
   top: 30vh;
   left: 76.6vw;
 }
-
-.hero-line11 {
+#hero .hero-line11 {
   bottom: 7vh;
   left: 0;
 }
-
-.hero-line12 {
+#hero .hero-line12 {
   bottom: 10.7vh;
   left: 49.4vw;
   transform: rotate(138deg) translateZ(0);
 }
-
-.hero-line13 {
+#hero .hero-line13 {
   bottom: 14.5vh;
   left: 53.7vw;
 }
-
-.phone-black,
-.phone-white {
+#hero .phone-black,
+#hero .phone-white {
   position: absolute;
   width: 25vw;
   height: 28vw;
@@ -286,16 +339,14 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-.phone-black {
+#hero .phone-black {
   background-image: url("../assets/hero-phone-black.png");
   right: -30vw;
   bottom: -8vh;
 }
-
-.phone-white {
+#hero .phone-white {
   background-image: url("../assets/phone-White.svg");
-  right: -25vw;
+  right: -30vw;
   bottom: -3vh;
 }
 
@@ -307,7 +358,7 @@ body {
 }
 
 .head-feature {
-  font-family: "Korataki-Rg", sans-serif;
+  font-family: "Korataki-Rg";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,7 +371,7 @@ body {
 
 /* Common text style */
 .feature-text {
-  font-family: "Korataki";
+  font-family: "Sansation";
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -757,4 +808,82 @@ body {
   top: 17.3vh;
   right: 7.5vw;
   transform: rotate(90deg);
+}
+
+/* Water -Section */
+#water-section {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+}
+#water-section .light-black-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(23, 23, 23, 0.262745098);
+}
+#water-section .text-bg {
+  width: 100%;
+  height: 100vh;
+  font-size: 22vw;
+  color: transparent;
+  font-family: "Korataki";
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/water-droplets-on-a-metal-surface.jpg);
+  background-size: cover;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+#water-section .water-splash1 {
+  width: 50vw;
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  z-index: 1;
+}
+#water-section .water-splash1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+#water-section .black-phone-cen {
+  width: 27vw;
+  height: 28vw;
+  background-image: url(../assets/hero-phone-black.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  will-change: transform, opacity;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+#water-section .water-splash2 {
+  width: 50vw;
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(270deg);
+  z-index: 10;
+}
+#water-section .water-splash2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }/*# sourceMappingURL=style.css.map */
