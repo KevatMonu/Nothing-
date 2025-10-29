@@ -1,5 +1,4 @@
 
-/*
 function lineanime() {
   return gsap
     .timeline({
@@ -39,11 +38,10 @@ function lineanime() {
     .to(".hero-line12", { width: "5vw" }, "<0.25")
     .to(".hero-line13", { width: "46vw" }, "<0.25")
 }
-  window.addEventListener("load",lineanime);
+ /* window.addEventListener("load",lineanime);*/
 
 
 function phoneAnimation() {
-
 
   if (window.innerWidth <= 767) {
   
@@ -82,16 +80,135 @@ function phoneAnimation() {
 }
 
 
-window.addEventListener("load", phoneAnimation);
+/*window.addEventListener("load", phoneAnimation);
 let resizeTimeout;
 window.addEventListener("resize", () => {
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(phoneAnimation, 300);
+});  */
+
+
+
+function wateranime(){
+  const text = document.querySelector(".text-bg ");
+  const water1= document.querySelector(".water-splash1");
+  const water2= document.querySelector(".water-splash2");
+
+
+gsap.to(text, {
+  fontSize: "22vw",
+  opacity:1,
+  duration:3, 
+  scrollTrigger: {
+    trigger: text,
+    start: "top 10%", 
+    end: "bottom 97%",
+    scrub: true, 
+  }
 });
-*/
+
+gsap.to(water1,{
+  left:"50%",
+  duration : 3,
+  scrollTrigger:{
+    trigger:water1,
+    start: "top 10%", 
+    end: "bottom 97%",
+    scrub:true,
+  }
+});
+
+gsap.to(water2,{
+  left:"50%",
+  duration : 3,
+  scrollTrigger:{
+    trigger:water2,
+     start: "top 10%", 
+    end: "bottom 97%",
+    scrub:true,
+  }
+});
+
+
+}
+ /*wateranime();*/
+
+
+function faq_control() {
+ 
+  const faqItems = document.querySelectorAll(".info-container");
+
+  faqItems.forEach((item) => {
+    const head = item.querySelector(".info-head");
+    const info = item.querySelector(".info-para");
+
+    
+    gsap.set(info, { height: 0, overflow: "hidden", opacity: 0 });
+
+    let isOpen = false;
+
+    head.addEventListener("click", () => {
+      if (!isOpen) {
+       
+        gsap.to(info, {
+          height:"auto", 
+          opacity: 1,
+        
+          ease: "power2.out",
+          onStart: () => {
+            info.style.display = "block";
+          },
+        });
+      } else {
+       
+        gsap.to(info, {
+          height: "auto",
+          opacity: 0,
+         
+          ease: "power2.in",
+          onComplete: () => {
+            info.style.display = "none";
+          },
+        });
+      }
+
+      isOpen = !isOpen;
+    });
+  });
+}
+
+/*faq_control();*/
 
 
 function featureanime(){
+  head = document.querySelector(".head-feature");
+
+ gsap.to(head, {
+  opacity: 1,
+  duration: 1.5, 
+  ease: "power2.out", 
+  scrollTrigger: {
+    trigger: head,
+    start: "top 5%", 
+    end: "bottom 20%", 
+    scrub: 1, 
+  }
+});
+
+
+gsap.to(".lt1",{
+  width:" 18vw",
+  duration: 3,
+  scrollTrigger:{
+    trigger:".lt1",
+      start: "top 6%",
+    end: "bottom 10%",
+    scrub: 1,
+  }
+})
+
+
 
 }
+
 featureanime();

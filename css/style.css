@@ -367,6 +367,7 @@ body {
   text-shadow: 0px 0px 7px #fff;
   padding-top: 2vw;
   color: #fff;
+  opacity: 0;
 }
 
 /* Common text style */
@@ -826,7 +827,7 @@ body {
 #water-section .text-bg {
   width: 100%;
   height: 100vh;
-  font-size: 22vw;
+  opacity: 0;
   color: transparent;
   font-family: "Korataki";
   text-transform: uppercase;
@@ -844,7 +845,7 @@ body {
   height: 90vh;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: -20%;
   transform: translate(-50%, -50%) rotate(90deg);
   z-index: 1;
 }
@@ -875,7 +876,8 @@ body {
   height: 90vh;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 115%;
+  height: 50%;
   transform: translate(-50%, -50%) rotate(270deg);
   z-index: 10;
 }
@@ -886,4 +888,961 @@ body {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+}
+
+#back-camera {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#back-camera .big-text {
+  font-size: 7.2vw;
+  color: #171717;
+  position: absolute;
+  top: 18vw;
+  left: -10vw;
+  font-family: "Korataki-Rg";
+  transform: rotate(270deg);
+}
+#back-camera .camera-head {
+  font-family: "Korataki-Rg";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 3.1vw;
+  padding-top: 2vw;
+  color: var(--grey);
+}
+#back-camera .cam-phone {
+  width: 45vw;
+  height: 33vw;
+  background-image: url(../assets/hero-phone-black.png);
+  position: absolute;
+  top: 18vw;
+  left: 25vw;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#back-camera .cam-line-list {
+  width: 100;
+  height: 100%;
+}
+#back-camera .cam-line-list .cam1-line {
+  width: 5.81vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 20.8vw;
+  left: 36.5vw;
+}
+#back-camera .cam-line-list .cam1-1-line {
+  width: 4.35vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 19.2vw;
+  left: 32.8vw;
+  transform: rotate(45deg);
+}
+#back-camera .cam-line-list .cam2-line {
+  width: 5.81vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 24vw;
+  left: 36.5vw;
+}
+#back-camera .cam-line-list .cam2-1-line {
+  width: 4.35vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 25.2vw;
+  left: 32.66vw;
+  transform: rotate(145deg);
+}
+#back-camera .cam-line-list .flash-line {
+  width: 7.26vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 19.4vw;
+  left: 41.6vw;
+  transform: rotate(90deg);
+}
+#back-camera .cam-line-list .back-line {
+  width: 7.26vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 18vw;
+  left: 51.7vw;
+  transform: rotate(125deg);
+}
+#back-camera .cam-line-list .gylp-line {
+  width: 7.26vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 23.8vw;
+  left: 54vw;
+}
+#back-camera .main-cam {
+  width: 100%;
+  height: 100%;
+}
+#back-camera .main-cam .out-mc {
+  font-family: "Korataki-Rg";
+  font-size: 1vw;
+  position: absolute;
+  top: 12.3vw;
+  left: 22.2vw;
+  line-height: 1.5;
+  color: var(--grey);
+}
+#back-camera .main-cam .mc-text {
+  font-family: "Sansation";
+  width: 8vw;
+  font-size: 1vw;
+  position: absolute;
+  top: 15vw;
+  left: 23.44vw;
+  line-height: 1.5;
+}
+#back-camera .main-cam .mc1 {
+  width: 8.71vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 14.4vw;
+  left: 23.44vw;
+}
+#back-camera .main-cam .mc2 {
+  width: 2.4vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 15.2vw;
+  left: 21.5vw;
+  transform: rotate(130deg);
+}
+#back-camera .main-cam .mc3 {
+  width: 2.5vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 17.4vw;
+  left: 20.7vw;
+  transform: rotate(90deg);
+}
+#back-camera .main-cam .mc4 {
+  width: 10.16vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 18.66vw;
+  left: 21.9vw;
+}
+#back-camera .main-cam .mc5 {
+  width: 2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 18.2vw;
+  left: 31.7vw;
+  transform: rotate(145deg);
+}
+#back-camera .main-cam .mc6 {
+  width: 2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 16.7vw;
+  left: 32.5vw;
+  transform: rotate(90deg);
+}
+#back-camera .main-cam .mc7 {
+  width: 2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 15.1vw;
+  left: 31.8vw;
+  transform: rotate(45deg);
+}
+#back-camera .ultra-cam {
+  width: 100%;
+  height: 100%;
+}
+#back-camera .ultra-cam .out-uc {
+  font-family: "Korataki-Rg";
+  font-size: 1vw;
+  position: absolute;
+  top: 30vw;
+  left: 22.2vw;
+  line-height: 1.5;
+  color: var(--grey);
+}
+#back-camera .ultra-cam .uc-text {
+  font-family: "Sansation";
+  width: 8vw;
+  font-size: 1vw;
+  position: absolute;
+  top: 25.8vw;
+  left: 23.5vw;
+  line-height: 1.5;
+}
+#back-camera .ultra-cam .uc1 {
+  width: 8.71vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 25.1vw;
+  left: 22.9vw;
+}
+#back-camera .ultra-cam .uc2 {
+  width: 2.4vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 26vw;
+  left: 21vw;
+  transform: rotate(130deg);
+}
+#back-camera .ultra-cam .uc3 {
+  width: 2.5vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 28.1vw;
+  left: 20.2vw;
+  transform: rotate(90deg);
+}
+#back-camera .ultra-cam .uc4 {
+  width: 10.16vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 29.4vw;
+  left: 21.4vw;
+}
+#back-camera .ultra-cam .uc5 {
+  width: 2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 28.9vw;
+  left: 31.2vw;
+  transform: rotate(145deg);
+}
+#back-camera .ultra-cam .uc6 {
+  width: 2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 27.5vw;
+  left: 32vw;
+  transform: rotate(90deg);
+}
+#back-camera .ultra-cam .uc7 {
+  width: 2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 25.8vw;
+  left: 31.3vw;
+  transform: rotate(45deg);
+}
+#back-camera .flash {
+  width: 100%;
+  height: 100%;
+}
+#back-camera .flash .f-text {
+  font-family: "Sansation";
+  width: 8vw;
+  font-size: 1.5vw;
+  position: absolute;
+  top: 13.2vw;
+  left: 44vw;
+  line-height: 1.5;
+}
+#back-camera .flash .f1 {
+  width: 5.81vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 12.89vw;
+  left: 42.9vw;
+}
+#back-camera .flash .f2 {
+  width: 1.5vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 13.5vw;
+  left: 41.7vw;
+  transform: rotate(130deg);
+}
+#back-camera .flash .f3 {
+  width: 1.8vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 14.9vw;
+  left: 41.1vw;
+  transform: rotate(90deg);
+}
+#back-camera .flash .f4 {
+  width: 6.7vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 15.8vw;
+  left: 42vw;
+}
+#back-camera .flash .f5 {
+  width: 1.2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 15.4vw;
+  left: 48.6vw;
+  transform: rotate(144deg);
+}
+#back-camera .flash .f6 {
+  width: 1.4vw;
+  border: 0.9px solid #fff;
+  position: absolute;
+  top: 14.5vw;
+  left: 48.9vw;
+  transform: rotate(90deg);
+}
+#back-camera .flash .f7 {
+  width: 1.3vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 13.35vw;
+  left: 48.5vw;
+  transform: rotate(45deg);
+}
+#back-camera .back-light {
+  width: 100%;
+  height: 100%;
+}
+#back-camera .back-light .bl-text {
+  font-family: "Sansation";
+  width: 8vw;
+  font-size: 1.1vw;
+  position: absolute;
+  top: 12.7vw;
+  left: 58.5vw;
+  line-height: 1.5;
+}
+#back-camera .back-light .bl1 {
+  width: 5.81vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 12vw;
+  left: 58.5vw;
+}
+#back-camera .back-light .bl2 {
+  width: 1.5vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 12.53vw;
+  left: 57.25vw;
+  transform: rotate(130deg);
+}
+#back-camera .back-light .bl3 {
+  width: 1.8vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 14vw;
+  left: 56.6vw;
+  transform: rotate(90deg);
+}
+#back-camera .back-light .bl4 {
+  width: 6.7vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 15vw;
+  left: 57.45vw;
+}
+#back-camera .back-light .bl5 {
+  width: 1.2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 14.71vw;
+  left: 63.98vw;
+  transform: rotate(144deg);
+}
+#back-camera .back-light .bl6 {
+  width: 1.4vw;
+  border: 0.9px solid #fff;
+  position: absolute;
+  top: 13.6vw;
+  left: 64.4vw;
+  transform: rotate(90deg);
+}
+#back-camera .back-light .bl7 {
+  width: 1.3vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 12.41vw;
+  left: 63.98vw;
+  transform: rotate(45deg);
+}
+#back-camera .glyph-light {
+  width: 100%;
+  height: 100%;
+}
+#back-camera .glyph-light .gl-text {
+  font-family: "Sansation";
+  width: 8vw;
+  font-size: 1.5vw;
+  position: absolute;
+  top: 22vw;
+  left: 63vw;
+  line-height: 1.5;
+}
+#back-camera .glyph-light .gl1 {
+  width: 8.71vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 20.84vw;
+  left: 62.7vw;
+}
+#back-camera .glyph-light .gl2 {
+  width: 2.4vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 21.7vw;
+  left: 60.8vw;
+  transform: rotate(130deg);
+}
+#back-camera .glyph-light .gl3 {
+  width: 2.5vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 23.8vw;
+  left: 60vw;
+  transform: rotate(90deg);
+}
+#back-camera .glyph-light .gl4 {
+  width: 10.16vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 25vw;
+  left: 61.3vw;
+}
+#back-camera .glyph-light .gl5 {
+  width: 2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 24.45vw;
+  right: 25.8vw;
+  transform: rotate(145deg);
+}
+#back-camera .glyph-light .gl6 {
+  width: 2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 22.88vw;
+  right: 25vw;
+  transform: rotate(90deg);
+}
+#back-camera .glyph-light .gl7 {
+  width: 2.2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 21.4vw;
+  right: 25.7vw;
+  transform: rotate(40deg);
+}
+
+#front-camera {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #000;
+}
+#front-camera .front-cam {
+  width: 100%;
+  height: 100%;
+}
+#front-camera .front-cam .out-fc {
+  font-family: "Korataki-Rg";
+  font-size: 1vw;
+  position: absolute;
+  top: 11vw;
+  left: 13.5vw;
+  line-height: 1.5;
+  color: var(--grey);
+}
+#front-camera .front-cam .fc-text {
+  font-family: "Sansation";
+  width: 8vw;
+  font-size: 1vw;
+  position: absolute;
+  top: 6.5vw;
+  left: 16vw;
+  line-height: 1.5;
+}
+#front-camera .front-cam .f-line {
+  width: 6.5vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 8.1vw;
+  left: 24.8vw;
+}
+#front-camera .front-cam .fc1 {
+  width: 8.71vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 5.8vw;
+  left: 14.7vw;
+}
+#front-camera .front-cam .fc2 {
+  width: 2.7vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 6.85vw;
+  left: 12.5vw;
+  transform: rotate(130deg);
+}
+#front-camera .front-cam .fc3 {
+  width: 2.5vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 9vw;
+  left: 11.75vw;
+  transform: rotate(90deg);
+}
+#front-camera .front-cam .fc4 {
+  width: 10.25vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 10.2vw;
+  left: 13.1vw;
+}
+#front-camera .front-cam .fc5 {
+  width: 2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 9.7vw;
+  left: 23vw;
+  transform: rotate(145deg);
+}
+#front-camera .front-cam .fc6 {
+  width: 2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 8.2vw;
+  left: 23.8vw;
+  transform: rotate(90deg);
+}
+#front-camera .front-cam .fc7 {
+  width: 2vw;
+  border: 0.1px solid #fff;
+  position: absolute;
+  top: 6.48vw;
+  left: 23.1vw;
+  transform: rotate(45deg);
+}
+#front-camera .front-phone {
+  width: 14vw;
+  height: 28vw;
+  position: absolute;
+  top: 7vw;
+  left: 30vw;
+}
+#front-camera .front-phone img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+}
+#front-camera .front-text {
+  position: absolute;
+  top: 12vw;
+  right: 18vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14vw;
+}
+#front-camera .front-text h1 {
+  font-family: "Korataki-Rg";
+  font-size: 3vw;
+  line-height: 1;
+  color: var(--grey);
+}
+#front-camera .front-text p {
+  font-family: "Sansation";
+  font-size: 2vw;
+  font-weight: 600;
+  color: var(--grey);
+}
+
+#display {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+#display .display-phone {
+  width: 18vw;
+  height: 35vw;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 7vw;
+}
+#display .display-phone img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+}
+#display .display-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2vw;
+}
+#display .display-head h1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: "Korataki-Rg";
+  font-size: 2vw;
+  font-weight: 400;
+  color: var(--grey);
+  margin: 0;
+}
+#display .display-head p {
+  font-family: "Korataki-Rg";
+  margin-top: 1.5vw;
+  font-size: 1.2vw;
+  color: var(--grey);
+}
+#display .display-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+#display .display-text h1 {
+  font-family: "Korataki-Rg";
+  font-size: 13.5vw;
+  letter-spacing: 1vw;
+  font-weight: 300;
+  color: var(--grey);
+}
+#display .display-text h2 {
+  font-family: "Korataki-Rg";
+  font-size: 8vw;
+  font-weight: 300;
+  background-image: url(../assets/front-side.png);
+  color: transparent;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+#processor {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3vw;
+  gap: 3vw;
+  position: relative;
+}
+#processor .processor-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#processor .processor-head p {
+  font-family: "Korataki-Rg";
+  color: var(--grey);
+  font-size: 1.9vw;
+  line-height: 1.2;
+}
+#processor .processor-para {
+  font-family: "Korataki-Rg";
+  color: var(--grey);
+}
+#processor .processor-chip {
+  font-family: "Korataki-Rg";
+  color: var(--grey);
+  font-size: 17vw;
+  letter-spacing: 0.8vw;
+}
+#processor .processor-phone {
+  width: 30vw;
+  height: 15vw;
+  position: absolute;
+  top: 19.8vw;
+}
+#processor .processor-phone video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* Makes it fill the div properly */
+  transform: translate(-50%, -50%);
+  border-radius: 1.5vw;
+}
+#processor .processor-phone .hand {
+  position: absolute;
+  top: 5vw;
+  width: 30vw;
+  height: 20vw;
+  background-image: url(../assets/hand.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 999;
+}
+
+#phone-body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#phone-body .phone-body1 {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  position: absolute;
+  top: 8vw;
+  left: 0;
+  width: 100%;
+}
+#phone-body .phone-body1 h1 {
+  font-family: "Korataki-Rg";
+  font-size: 2.3vw;
+  color: var(--grey);
+  padding-left: 10vw;
+}
+#phone-body .phone-body1 .body-img {
+  width: 60vw;
+  height: 6vw;
+  position: relative;
+  margin-left: -10vw;
+}
+#phone-body .phone-body1 .body-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+}
+#phone-body .phone-body2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+  position: absolute;
+  bottom: 4vw;
+  right: 0;
+  width: 100%;
+  align-items: flex-end;
+}
+#phone-body .phone-body2 h1 {
+  font-family: "Korataki-Rg";
+  font-size: 2.3vw;
+  color: var(--grey);
+  padding-right: 10vw;
+}
+#phone-body .phone-body2 .body-img {
+  width: 60vw;
+  height: 6vw;
+  position: relative;
+  margin-right: -10vw;
+}
+#phone-body .phone-body2 .body-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+}
+
+#bend-phone {
+  width: 100;
+  height: 100vh;
+  position: relative;
+}
+#bend-phone .bend-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2vw;
+  gap: 0.1vw;
+}
+#bend-phone .bend-text h1 {
+  font-family: "Korataki-Rg";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--grey);
+}
+#bend-phone .bend-text .outline {
+  color: transparent;
+  -webkit-text-stroke: 0.2px var(--grey);
+}
+#bend-phone .bend-white {
+  width: 60vw;
+  position: absolute;
+  left: -10vw;
+  margin-top: 1vw;
+}
+#bend-phone .bend-white img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#bend-phone .bend-black {
+  width: 60vw;
+  position: absolute;
+  right: -9.6vw;
+  margin-top: 15vw;
+}
+#bend-phone .bend-black img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#phone-info {
+  width: 100%;
+  min-height: 100vh;
+}
+#phone-info .deatil-con {
+  width: 100%;
+}
+#phone-info .deatil-con h1 {
+  font-family: "Korataki-Rg";
+  font-size: 3.2vw;
+  color: transparent;
+  text-align: center;
+  padding: 4vw 0 2.5vw 0;
+  -webkit-text-stroke: 0.1px #fff;
+  letter-spacing: 0.2vw;
+}
+#phone-info .info-container {
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+#phone-info .info-container .info-head {
+  font-family: "Korataki-Rg";
+  font-size: 2.3vw;
+  padding: 2.6vw;
+  color: var(--grey);
+}
+#phone-info .info-container .info-para {
+  font-family: "Korataki-Rg";
+  font-size: 1.2vw;
+  padding-left: 2.6vw;
+  display: none;
+  opacity: 0;
+  margin-top: 1vw;
+}
+#phone-info .info-container .info-para li {
+  list-style: none;
+  margin-bottom: 4vw;
+}
+
+#footer {
+  width: 100%;
+  height: 100vh;
+}
+#footer .foot1 {
+  width: 100%;
+  height: 70vh;
+  padding: 5vw 0 0 2vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 30%;
+}
+#footer .foot1 .foot-con {
+  font-family: "Korataki-Rg";
+}
+#footer .foot1 .foot-con h1 {
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+  font-weight: 300;
+}
+#footer .foot1 .foot-con li {
+  font-size: 0.8vw;
+  font-weight: 300;
+  list-style: none;
+  margin-bottom: 1vw;
+}
+#footer .foot1 h2 {
+  font-size: 1.3vw;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#footer .foot1 .email {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #fff;
+  margin-top: 2vw;
+  border-radius: 0.3vw;
+}
+#footer .foot1 .email input {
+  font-size: 1vw;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  padding: 1vw 0 1vw 3vw;
+}
+#footer .foot1 .email i {
+  color: #000;
+  background-color: #fff;
+  padding: 0.6vw 0.7vw 0.9vw 0.6vw;
+  font-size: 1.5vw;
+  border-radius: 0.3vw;
+}
+#footer .foot2 {
+  width: 100%;
+  height: 30vh;
+  border-top: 2px solid #fff;
+  font-family: "Korataki-Rg";
+}
+#footer .foot2 .foot2-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 2vw;
+}
+#footer .foot2 .foot2-head li {
+  font-size: 1.2vw;
+  list-style: none;
+}
+#footer .foot2 .foot2-icon {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+#footer .foot2 .foot2-icon li {
+  list-style: none;
+}
+#footer .foot2 .foot2-icon li i {
+  font-size: 1.3vw;
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.2vw;
+}
+#footer .foot2-bottom {
+  text-align: center;
+  margin-top: 2vw;
+}
+#footer .foot2-bottom h2 {
+  font-size: 1vw;
+  font-weight: 300;
+}
+#footer .foot2-bottom h1 {
+  font-size: 1.3vw;
+  font-weight: 300;
+  margin-top: 1vw;
 }/*# sourceMappingURL=style.css.map */
